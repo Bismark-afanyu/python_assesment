@@ -1,0 +1,36 @@
+Python Contact Book Application
+This document describes the Python Contact Book Application, which allows users to store and manage contact details like name, phone number, and email. The program demonstrates basic Python concepts such as dictionaries, functions, control structures, input validation, and file handling.
+
+Data Structure
+The program stores contacts in a dictionary where the contact name is the key, and the phone number and email address are the values stored as a dictionary. Example structure: {‘Bismarck Bantar’: {'phone': ‘6’80755444, 'email': ‘bismark.bantar1@gmail.com'}}.
+
+File Handling
+The contacts are stored in a text file ('contacts.txt'). Each time the program starts, it loads existing contacts from this file. Each contact is stored on a new line in the format: name,phone,email.
+
+Functions
+The application consists of several functions that handle adding, updating, viewing, and deleting contacts, as well as loading and saving data from/to the file.
+
+Function Descriptions
+1. load_contacts():
+This function loads contacts from 'contacts.txt' into a dictionary. If the file exists, it reads each line, splits the values, and populates the dictionary. If the file doesn't exist, an empty dictionary is returned.
+2. save_contacts():
+This function saves the current dictionary of contacts to 'contacts.txt'. It writes each contact as a new line in the format name,phone,email.
+3. add_contact():
+This function adds a new contact to the dictionary. It prompts the user for the contact's name, phone number, and email, validates the input, and then adds the contact to the dictionary. It also saves the updated dictionary to the file.
+4. update_contact():
+This function updates an existing contact. It prompts the user for the contact name, and allows updating the phone number and/or email. The changes are saved to the file.
+5. view_contacts():
+This function displays all the contacts stored in the dictionary. Each contact's name, phone number, and email are displayed.
+6. delete_contact():
+This function deletes a contact by name. It removes the contact from the dictionary and saves the updated dictionary to the file.
+
+Input Validation
+The program validates the input for phone numbers and email addresses. Phone numbers must contain only digits, and emails are validated using a regular expression.
+
+Main Program Execution
+The code includes an `if __name__ == '__main__':` block. This ensures that the main function (which runs the contact book logic) is only executed if the script is run directly, and not when imported as a module into another Python program.
+
+Conclusion
+This contact book application demonstrates the use of Python dictionaries, file handling, functions, and input validation in a simple and practical way. It can be extended further with features like searching for contacts or exporting data.
+
+
