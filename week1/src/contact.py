@@ -2,7 +2,7 @@ import re
 import os
 
 # File to store the contacts
-CONTACT_FILE = '/Users/caasidev/development/python_assesment_1/contacts.txt'
+CONTACT_FILE = '/Users/caasidev/development/python_assesment_1/week1/docs/contacts.csv'
 
 
 # Load contacts from file when program starts
